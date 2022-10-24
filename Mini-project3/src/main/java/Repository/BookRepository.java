@@ -11,5 +11,5 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     List<Book> getAll();
     List<Book> getAllByName(String name);
     List<Book> getAllByRecommendedForContains(String recommendation);
-    Book getByISIN(String ISIN);
+    Book getByISBN(String ISIN);
 }
