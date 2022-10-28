@@ -1,5 +1,6 @@
-INSERT INTO book (name, author, description, ISBN, price) VALUES ('Bob','Hemmingway1','Some book','1234',123);
-INSERT INTO book (name, author, description, ISBN, price) VALUES ('Bob','Dr bryde','Some Other book','1234',123);
-INSERT INTO book (name, author, description, ISBN, price) VALUES ('Bob','James','Jack the Ripper','1234',123);
-INSERT INTO book (name, author, description, ISBN, price) VALUES ('Bob','Benny','Game of thrones','1234',123);
-INSERT INTO book (name, author, description, ISBN, price) VALUES ('Bob','Billy Bob','Living la vida loca','1234',123);
+INSERT INTO book (id,name, author, description, ISBN, price, recommendedFor) VALUES (1,'Bob','Hemmingway1','Some book','1234',123,'Kids');
+INSERT INTO book (id,name, author, description, ISBN, price, recommendedFor) VALUES (2,'Bob','Hemmingway1','Some book','1234',123,'Kids');
+INSERT INTO book (id,name, author, description, ISBN, price, recommendedFor) VALUES (3,'Bob','Hemmingway1','Some book','1234',123,'Kids');
+INSERT INTO book (id,name, author, description, ISBN, price, recommendedFor) VALUES (4,'Bob','Hemmingway1','Some book','1234',123,'Kids');
+INSERT INTO book (id,name, author, description, ISBN, price, recommendedFor) VALUES (5,'Bob','Hemmingway1','Some book','1234',123,'Kids');
+INSERT INTO book (id,name, author, description, ISBN, price, recommendedFor) VALUES (6,'Bob','Hemmingway1','Some book','1234',123,'Kids');

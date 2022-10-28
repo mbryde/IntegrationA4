@@ -5,5 +5,6 @@ CREATE TABLE book (
     author VARCHAR(255) NOT NULL,
     description VARCHAR(255) NOT NULL,
     ISBN VARCHAR(255) NOT NULL,
-    price int NOT NULL
+    price int NOT NULL,
+    recommendedFor VARCHAR(255) NOT NULL,
 )

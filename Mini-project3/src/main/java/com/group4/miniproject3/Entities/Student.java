@@ -1,4 +1,4 @@
-package Entities;
+package com.group4.miniproject3.Entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,13 +21,11 @@ public class Student {
     public String name;
     public String email;
     public String education;
-    @ManyToMany(fetch = FetchType.LAZY)
-    public ArrayList<Book> boughtBooks;
 
-    public Student(String name, String email, String education, ArrayList<Book> boughtBooks) {
+
+    public Student(String name, String email, String education) {
         this.name = name;
         this.email = email;
         this.education = education;
-        this.boughtBooks = boughtBooks;
     }
 }

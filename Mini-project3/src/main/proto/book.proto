@@ -10,9 +10,12 @@ option java_generic_services = true;
 // Definition of Request message and its parameters
 message BookRequest
 {
-  string id = 1;
 }
 
+message BooksResponse
+{
+    repeated BookResponse books = 1;
+}
 // Definition of the Response message and its parameters, which are given numbers of order
 message BookResponse
 {
@@ -22,11 +25,13 @@ message BookResponse
   string description = 4;
   string ISBN = 5;
   string price = 6;
+  string recommendedFor = 7;
+
 }
 
 // Here we define the overall service contract, StudentRequest and StudentResponse defined above
 // The name of the service is StudentService, getStudentInfo() is an operation it can provide to a remote call
 service BookService
 {
-  rpc getBookById(BookRequest) returns (BookResponse);
+  rpc getAllBooks(BookRequest) returns (BooksResponse);
 }

@@ -1,4 +1,4 @@
-package Entities;
+package com.group4.miniproject3.Entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,18 +16,15 @@ import java.util.ArrayList;
 @Table(name = "Book")
 public class Book {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     public String name;
     public String author;
     public String description;
     public String ISBN;
     public int price;
+    public String recommendedFor;
 
-    @ElementCollection
-    public ArrayList<String> recommendedFor;
-
-    public Book(String name, String author, String description, String ISBN, int price, ArrayList<String> recommendedFor) {
+    public Book(String name, String author, String description, String ISBN, int price, String recommendedFor) {
         this.name = name;
         this.author = author;
         this.description = description;

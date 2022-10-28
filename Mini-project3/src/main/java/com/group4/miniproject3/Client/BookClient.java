@@ -1,4 +1,4 @@
-package Client;
+package com.group4.miniproject3.Client;
 
 import com.group4.miniproject3.stubs.book.BookRequest;
 import com.group4.miniproject3.stubs.book.BookResponse;
@@ -12,10 +12,7 @@ public class BookClient {
 
         BookServiceGrpc.BookServiceBlockingStub bookServiceBlockingStub = BookServiceGrpc.newBlockingStub(channel);
 
-        BookRequest bookRequest = BookRequest.newBuilder().setId("1").build();
+        BookRequest bookRequest = BookRequest.newBuilder().build();
 
-        BookResponse bookResponse = bookServiceBlockingStub.getBookById(bookRequest);
-
-        System.out.println(bookResponse);
     }
 }

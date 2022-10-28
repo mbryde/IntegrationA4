@@ -1,6 +1,6 @@
-package Repository;
+package com.group4.miniproject3.Repository;
 
-import Entities.Book;
+import com.group4.miniproject3.Entities.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
