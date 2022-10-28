@@ -12,6 +12,12 @@ message BookRequest
 {
 }
 
+message BookRecommendedRequest
+{
+  int32 price=1;
+  string recommendedFor=2;
+}
+
 message BooksResponse
 {
     repeated BookResponse books = 1;
@@ -34,4 +40,5 @@ message BookResponse
 service BookService
 {
   rpc getAllBooks(BookRequest) returns (BooksResponse);
+  rpc getAllRecommended(BookRecommendedRequest) returns (BooksResponse);
 }
