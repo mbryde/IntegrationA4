@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 
 @Entity
 @Data
@@ -21,11 +20,13 @@ public class Student {
     public String name;
     public String email;
     public String education;
+    public Integer amount;
 
 
-    public Student(String name, String email, String education) {
+    public Student(String name, String email, String education, Integer amount) {
         this.name = name;
         this.email = email;
         this.education = education;
+        this.amount = amount;
     }
 }
