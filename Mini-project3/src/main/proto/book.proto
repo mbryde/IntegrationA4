@@ -35,10 +35,17 @@ message BookResponse
 
 }
 
+message buyRequest
+{
+  string bookId = 1;
+  string studentId = 2;
+}
+
 // Here we define the overall service contract, StudentRequest and StudentResponse defined above
 // The name of the service is StudentService, getStudentInfo() is an operation it can provide to a remote call
 service BookService
 {
   rpc getAllBooks(BookRequest) returns (BooksResponse);
   rpc getAllRecommended(BookRecommendedRequest) returns (BooksResponse);
+  rpc buyBook(buyRequest) returns (BookResponse);
 }
